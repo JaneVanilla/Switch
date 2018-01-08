@@ -12,22 +12,31 @@
    </head>
    <body class="page-body">
      <header class="page-header">
-       <nav class="page-nav">
-         <ul class="page-nav__list">
-           <li class="page-nav__items"><a href="#" class="page-nav__links">Home</a></li>
-           <li class="page-nav__items"><a href="#" class="page-nav__links">What we do?</a></li>
-           <li class="page-nav__items"><a href="#" class="page-nav__links">Testimomial</a></li>
-           <li class="page-nav__items"><a href="#" class="page-nav__links">Contact Us</a></li>
-         </ul>
-       </nav>
-       <a href="#" class="page-header__logo">Switch</a>
-       <form action="post" class="page-header__form">
-         <input class="page-header__search-input" type="text" placeholder="Search...">
-       </form>
+       <div class="container">
+        <div class="page-header__top">
+           <nav class="page-nav">
+             <ul class="page-nav__list">
+               <li class="page-nav__items"><a href="#" class="page-nav__links">Home</a></li>
+               <li class="page-nav__items"><a href="#" class="page-nav__links">What we do?</a></li>
+               <li class="page-nav__items"><a href="#" class="page-nav__links">Testimomial</a></li>
+               <li class="page-nav__items"><a href="#" class="page-nav__links">Contact Us</a></li>
+             </ul>
+           </nav>
+           <a href="#" class="page-header__logo">Switch</a>
+
+           <form action="post" class="page-header__form">
+             <input class="page-header__search-input" type="text" placeholder="Search...">
+           </form>
+             <div class="page-header__mobile-btn">
+                <button class="page-header__btn page-header__btn--hamburger"><i class="fa fa-bars" aria-hidden="true"></i></button>
+                <button class="page-header__btn page-header__btn--close"><i class="fa fa-times" aria-hidden="true"></i></button>
+           </div>
+        </div>
+       </div>
      </header>
        
    </body>
     <script src="jquery/jquery-3.2.1.min.js"></script>
     <script src="main.js"></script>
   </html>
-  <!--browser-sync start --server --files "css/*.css, *.html, less/**/*.less"-->
+  <!--browser-sync start --server --files "css/*.css, *.html, less/**/*.less, *.js"-->
