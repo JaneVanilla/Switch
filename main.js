@@ -15,3 +15,22 @@ closeBtn.addEventListener("click", function(event2) {
     closeBtn.classList.remove("page-header__show-btn")
     hamburger.classList.remove("page-header__close-btn");
 });
+
+//slider
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("slider__mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
